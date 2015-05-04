@@ -1,0 +1,101 @@
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+	
+	.reveal-large 	{
+		width: 800px;
+		margin-left: -440px;
+		visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 9999;
+		padding: 30px 40px 34px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+	
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		background: rgba(0,0,0,.8);
+		z-index: 9998;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+	
+	.reveal-modal {
+		left: 50%;
+		margin-left: -300px;
+		padding: 20px;
+		position: absolute;
+		text-align: center;
+		top: 100px;
+		visibility: hidden;
+		z-index: 9999;
+	}
+
+	.popup.reveal-modal {
+		padding: 0;
+	}
+
+#call > form {
+	padding: 30px;
+}
+
+#oferta {
+	height: 500px;
+	overflow-y: auto;
+	position: absolute;
+	text-align: left;
+	width: 700px;
+}
+
+#oferta li {
+	font-size: 16px;
+	padding: 15px 0;
+}
+
+#oferta .wrap {
+	padding: 30px;
+}
+
+	.reveal-modal.small 			{ width: 200px; margin-left: -140px;}
+	.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.reveal-modal.large 			{ width: 600px; margin-left: -340px;}
+	.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+	
+	.reveal-modal .close-reveal-modal {
+		line-height: .5;
+		position: absolute;
+		font-weight: bold;
+		cursor: pointer;
+    display: block;
+    height: 20px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    color: #ff2c14;
+}
+	/*
+		
+	NOTES
+	
+	Close button entity is &#215;
+	
+	Example markup
+	
+	<div id="myModal" class="reveal-modal">
+		<h2>Awesome. I have it.</h2>
+		<p class="lead">Your couch.  I it's mine.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	*/
