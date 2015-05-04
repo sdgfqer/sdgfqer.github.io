@@ -36,16 +36,11 @@ jQuery(document).ready(function($){
     function sendAjax(obj) {
         data = $(obj).closest('form').serialize();
         $.ajax({
-            url: "http://formspree.io/laboffreedom@yandex.ru",
-            method: "POST",
-            data: data,
-            beforeSend: function() {},
-            success: function(msg) {
-                $(obj).closest('form').trigger('reveal:close')
-                $("#message").html(msg);
-                $("#form_site").reveal();
-            },
-        });
+    url: "http://formspree.io/laboffreedom@yandex.ru",
+    method: "POST",
+    data: {message: "hello!"},
+    dataType: "json"
+}); 
     }
 })
 
