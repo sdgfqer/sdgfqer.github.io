@@ -37,7 +37,7 @@ jQuery(document).ready(function($){
         data = $(obj).closest('form').serialize();
         $.ajax({
             url: "http://formspree.io/laboffreedom@yandex.ru",
-            type: "POST",
+            method: "POST",
             data: data,
             beforeSend: function() {},
             success: function(msg) {
