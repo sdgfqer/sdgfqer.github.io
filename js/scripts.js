@@ -36,11 +36,16 @@ jQuery(document).ready(function($){
     function sendAjax(obj) {
         data = $(obj).closest('form').serialize();
         $.ajax({
-    url: "http://formspree.io/laboffreedom@yandex.ru",
-    method: "POST",
-    data: {message: "hello!"},
-    dataType: "json"
-}); 
+            url: "../send.php",
+            type: "POST",
+            data: data,
+            beforeSend: function() {},
+            success: function(msg) {
+                $(obj).closest('form').trigger('reveal:close')
+                $("#message").html(msg);
+                $("#form_site").reveal();
+            },
+        });
     }
 })
 
@@ -125,3 +130,12 @@ $('.back_call.b_news').magnificPopup({
   type:'inline',
   midClick: true
 });
+
+/* Parallax */
+$(document).ready(function(){
+    $('#start').localScroll(800);
+    $('#how').parallax("0", 0.1);
+    $('#news').parallax("0", 0.1);
+    $('#contacts').parallax("0", 0.1);
+
+})
