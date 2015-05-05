@@ -19,6 +19,8 @@ h6 {font-size: 20px;}
 
 section {padding-top: 100px;}
 
+.text-center img {margin: 0 auto;}
+
 /* Preloader */
 .loader {
 	background: none repeat scroll 0 0 #ffffff;
@@ -46,6 +48,27 @@ section {padding-top: 100px;}
 	width: 60px;
 }
 
+/* Parallax */
+#start {
+	background:url(../img/start.jpg) 0 0 no-repeat fixed;
+	margin: 0 auto;
+}
+
+#how {
+	background:url(../img/how.png) 0 0 no-repeat fixed;
+	margin: 0 auto;
+}
+
+#news {
+	background:url(../img/news.jpg) 0 0 no-repeat fixed;
+	margin: 0 auto;
+}
+
+#contacts {
+	background:url(../img/contacts.jpg) 0 0 no-repeat fixed;
+	margin: 0 auto;
+}
+
 /* Triangle for cutting sections */
 .triangle {
 	background-image: url(../img/angle.png);
@@ -69,22 +92,24 @@ section {padding-top: 100px;}
 /* Top menu styles*/
 #top_menu {
 	background: none repeat scroll 0 0 #fff;
-	height: 90px;
 	padding: 0;
 	position: fixed;
 	width: 100%;
 	z-index: 100;
 }
 
-#top_menu img {height: 90px;}
+#top_menu img {padding-top: 11%;}
+
+#top_menu ul {
+	height: 100px;
+	padding-top: 3%;
+}
 
 nav li {
 	float: left;
 	list-style: outside none none;
-	padding: 3px 20px;
+	padding: 2%;
 }
-
-nav li:nth-child(1) {padding-left: 40px;}
 
 nav a {
 	font-weight: bold;
@@ -94,7 +119,7 @@ nav a {
 nav a:hover {color: #000;}
 
 #top_menu p {
-	font-size: 30px;
+	font-size: 1.7em;
 	font-weight: bold;
 }
 
@@ -130,14 +155,11 @@ nav a:hover {color: #000;}
 
 /* First presentation block with contact form */
 #start {
-	background-image: url(../img/angle.png);
-	background-position: 0 100%;
-	background-repeat: no-repeat;
 	color: #fff;
 	font-size: 14px;
 	font-weight: bold;
 	text-shadow: 1px 1px 0 #000;
-	padding-top: 100px;
+	padding-top: 7%;
 }
 
 .w_form {margin: 100px 0;}
@@ -288,18 +310,19 @@ form h4 {color: #f1464d;}
   overflow-x: scroll;
 }
 
-		/* News by number*/
-		.s_news img {padding: 20px 0;}
+.s_news img {padding: 20px 0;}
 
-		.s_news p {text-align: justify;}
+.s_news p {text-align: justify;}
 
-		.s_news ul, .s_news li {
-			text-align: left;
-		}
+.s_news ul, .s_news li {text-align: left;}
 
-		.s_news h5 {
-			text-align: left;
-		}
+.s_news h5 {text-align: left;}
+
+.s_news button {
+	position: fixed;
+	right: 29%;
+	top: 2%;
+}
 
 /* Comments about our work */
 #comments h2 {padding-bottom: 50px;}
